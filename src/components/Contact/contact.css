@@ -71,16 +71,28 @@
   padding: 0.75rem 3.5rem;
   border-radius: 0.5rem;
   margin: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.submitBtn:hover {
+  border-radius: 2rem;
+  
+  /* -webkit-transform: scale(1.1); */
 }
 
 .links {
   display: flex;
   flex-wrap: wrap;
 }
-.link{
-    object-fit: cover;
-    height: 3rem;
-    width: 3rem;
-    margin: 0 0.75rem;
-    
+.link {
+  object-fit: cover;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 0.75rem;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.link:hover {
+  -webkit-transform: scale(1.1);
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/RKLogo11.png";
 import { Link } from "react-scroll";
 import contactImg from "../../assets/contact.png";
 import menu from "../../assets/menu.png";
@@ -8,7 +8,18 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <nav className="navbar">
-      <img src={logo} alt="Logo" className="logo" />
+      <Link
+        spy={true}
+        smooth={true}
+        offset={-100}
+        activeClass="deactive"
+        to="intro"
+        duration={500}
+        className="logoLink"
+      >
+        <img src={logo} alt="Logo" className="logo" />
+      </Link>
+
       <div className="desktopMenu">
         <Link
           spy={true}
@@ -56,17 +67,20 @@ const Navbar = () => {
           Clients
         </Link>
       </div>
-      <button
-        className="desktopMenuBtn"
-        onClick={() => {
-          document
-            .getElementById("contact")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        <img src={contactImg} className="desktopMenuImg" alt="" />
-        Contact Me
-      </button>
+      <div className="btns">
+        <button
+          className="desktopMenuBtn"
+          onClick={() => {
+            document
+              .getElementById("contact")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          <img src={contactImg} className="desktopMenuImg" alt="" />
+          Contact Me
+        </button>
+        <button className="loginBtn">Login</button>
+      </div>
       <img
         src={menu}
         alt="Menu"
@@ -147,6 +161,14 @@ const Navbar = () => {
         >
           Contact
         </Link>
+        <span
+          className="listItem"
+          onClick={() => {
+            setShowMenu(false);
+          }}
+        >
+          Login
+        </span>
       </div>
     </nav>
   );

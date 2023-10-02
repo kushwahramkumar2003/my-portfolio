@@ -18,6 +18,13 @@
   height: 3rem;
   width: 4rem;
 }
+.logoLink {
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+.logoLink:hover {
+  -webkit-transform: scale(1.1);
+}
 
 .desktopMenuListItem {
   margin: 1rem;
@@ -46,11 +53,36 @@
   padding: 0 1rem;
   border-radius: 2rem;
   cursor: pointer;
+  transition: all 0.2s linear;
+  margin: 0.1rem 0.8rem;
 }
 .desktopMenuBtn:hover {
-  /* transition: all 0.3s ease-in-out;
-  padding: 0.1rem 1.1rem; */
-  /* margin: 1rem 1rem; */
+  border: 1px solid white;
+  background: rgb(30, 30, 30);
+  color: white;
+}
+.loginBtn {
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  margin: 0% 0%;
+}
+.loginBtn:hover {
+  border: 1px solid white;
+  background: rgb(30, 30, 30);
+  color: white;
+}
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .active {
@@ -77,11 +109,17 @@
   padding: 0.5rem 3rem;
   margin: 0.25rem;
   background: rgb(30, 30, 30);
+  cursor: pointer;
+}
+.listItem:hover {
+  border-radius: 0.8rem;
+  transition: all 0.2s linear;
 }
 .mobMenu {
   display: none;
   object-fit: cover;
   height: 1.8rem;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 720px) {
@@ -94,4 +132,12 @@
   .desktopMenuBtn {
     display: none;
   }
+  .btns {
+    display: none;
+  }
+}
+.mobMenu:hover {
+  cursor: pointer;
+
+  -webkit-transform: scale(1.1);
 }
