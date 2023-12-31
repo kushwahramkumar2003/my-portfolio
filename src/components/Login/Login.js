@@ -56,8 +56,9 @@ const Login = () => {
               setPassword(e.target.value);
             }}
           />
-
-          <input type="submit" value="Login" className="submitBtn" />
+          <button type="submit" className="submitBtn">
+            Login
+          </button>
         </form>
       </div>
     </div>
