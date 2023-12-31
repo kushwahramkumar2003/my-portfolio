@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Skills from "./components/Skills/Skills";
 import Works from "./components/Works/Works";
 import UserContext from "./components/Context/UserContext.js";
+import Home from "./components/pages/Home.js";
 import { useState } from "react";
 
 function App() {
@@ -14,12 +15,7 @@ function App() {
   return (
     <div className="App">
       <UserContext.Provider value={({ user: user }, { setUser: setUser })}>
-        <Navbar />
-        <Intro />
-        <Skills />
-        <Works />
-        <Contact />
-        <Footer />
+        <Home />
       </UserContext.Provider>
     </div>
   );

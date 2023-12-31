@@ -1,18 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./works.css";
+import UserContext from "../Context/UserContext";
 
 import ProjectCard from "../core/LandingPage/ProjectCard/ProjectCard";
-import fetchData from "./../service/fetchData";
 
-const Works = () => {
-  let [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    fetchData().then((data) => {
-      setProjects(data);
-    });
-  }, []);
-
+const Works = ({ projects, loading }) => {
   return (
     <section id="works">
       <h2 className="worksTitle">My Projects</h2>
@@ -22,17 +14,19 @@ const Works = () => {
         shaping a better, more connected future.{" "}
       </span>
       <div className="worksImgs">
-        {projects.map((project) => {
-          return (
-            <ProjectCard
-              title={project.title}
-              img={project.projectImageUrl}
-              link={project.link}
-              desc={project.description}
-              className="worksImg"
-            />
-          );
-        })}
+        {!loading &&
+          projects &&
+          projects.map((project) => {
+            return (
+              <ProjectCard
+                title={project.title}
+                img={project.projectImageUrl}
+                link={project.link}
+                desc={project.description}
+                className="worksImg"
+              />
+            );
+          })}
       </div>
       <button className="workBtn">See More</button>
     </section>
