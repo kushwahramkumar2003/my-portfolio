@@ -3,7 +3,11 @@ import "./navbar.css";
 import logo from "../../assets/RKLogo11.png";
 import { Link } from "react-scroll";
 import contactImg from "../../assets/contact.png";
-import menu from "../../assets/menu.png";
+// import menu from "../../assets/menu.png";
+// import menu from "../../assets/menu.png";
+import menu from "../../assets/menu.gif";
+import { Link as Link2 } from "react-router-dom";
+import Login from "../Login/Login";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
@@ -79,7 +83,10 @@ const Navbar = () => {
           <img src={contactImg} className="desktopMenuImg" alt="" />
           Contact Me
         </button>
-        <button className="loginBtn">Login</button>
+
+        <Link2 to={"/login"}>
+          <button className="loginBtn">Login</button>
+        </Link2>
       </div>
       <img
         src={menu}

@@ -2,9 +2,20 @@ const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const routes = require("./routes/index.routes.js");
+// const bodyParser = require("body-parser");
+const fileUpload = require("express-fileupload");
 
 const app = express();
+// app.use(methodOverride('_method'));
+app.use(
+  fileUpload({
+    useTempFiles: true,
+    tempFileDir: "/tmp",
+  })
+);
 
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());

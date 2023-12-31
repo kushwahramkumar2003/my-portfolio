@@ -1,0 +1,57 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  max-width: 60vw;
+}
+.addNewProj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+input {
+  flex-direction: column;
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  /* margin: 0.5rem; */
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+}
+.addProjBtn {
+  font-size: medium;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  width: max-content;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 40rem;
+}
+.addProjBtn:hover {
+  /* padding: 0.6rem 1.1rem; */
+  border-radius: 2rem;
+}
+
+.projectSection {
+  /* max-width: 40rem; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* padding: 2rem; */
+  margin: 2rem 2rem;
+}

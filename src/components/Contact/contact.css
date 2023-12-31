@@ -26,8 +26,8 @@
 }
 .clientImg {
   object-fit: cover;
-  width: 23%;
-  min-width: 9rem;
+  width: 15%;
+  min-width: 5rem;
   margin: auto;
   padding: 0.25rem;
 }
@@ -77,7 +77,7 @@
 }
 .submitBtn:hover {
   border-radius: 2rem;
-  
+
   /* -webkit-transform: scale(1.1); */
 }
 

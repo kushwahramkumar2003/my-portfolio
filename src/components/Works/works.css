@@ -26,11 +26,14 @@
   flex-wrap: wrap;
   width: 100vw;
   max-width: 65rem;
+  gap: 1rem;
+  margin-top: 2rem;
 }
 .worksImg {
   object-fit: cover;
   height: 20rem;
   margin: 0.5rem;
+  /* min-width: 100rem; */
 }
 .workBtn {
   margin: 3rem 0;

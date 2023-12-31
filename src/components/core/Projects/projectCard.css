@@ -1,0 +1,33 @@
+.projectCard {
+  max-width: 25rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.projectImg {
+  object-fit: cover;
+  max-width: 25rem;
+  max-height: 25rem;
+}
+
+.projectCardBtn {
+  /* width: 100%;
+  max-width: 40rem; */
+  margin: 0.5rem;
+  font-size: medium;
+
+  background: #000aff;
+  color: white;
+  border: none;
+  padding: 0.75rem 3.5rem;
+  border-radius: 0.5rem;
+  /* margin: 2rem; */
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.projectCardBtn:hover {
+  border-radius: 2rem;
+
+  /* -webkit-transform: scale(1.1); */
+}

@@ -1,0 +1,96 @@
+.leftSection {
+  display: flex;
+  flex-direction: row;
+}
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 4rem);
+}
+.profile {
+  width: 100vw;
+  max-width: 70rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: calc(100vw - 4rem);
+}
+.nameGroup {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.passwordGroup {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.myBorder {
+  border: 2px solid white;
+}
+.backgroundImg {
+  display: flex;
+  flex-direction: column;
+}
+.password,
+.confirmPassword {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
+}
+
+.updateBtn {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  font-size: medium;
+
+  background: #000aff;
+  color: white;
+  border: none;
+  padding: 0.75rem 3.5rem;
+  border-radius: 0.5rem;
+  /* margin: 2rem; */
+  cursor: pointer;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+.updateBtn:hover {
+  border-radius: 2rem;
+
+  /* -webkit-transform: scale(1.1); */
+}
+
+.backgroundImg {
+  margin-left: 4rem;
+}
+.backgroundImg > input {
+  background: rgb(40, 40, 40);
+  margin: 0 0.5rem;
+  border-radius: 0.5rem;
+  height: auto;
+  width: 100%;
+}
+.backgroundImg > img {
+  object-fit: cover;
+  max-width: 35rem;
+  max-height: 35rem;
+}
+
+@media screen and (max-width: 720px) {
+  .profile {
+    flex-direction: column;
+  }
+}

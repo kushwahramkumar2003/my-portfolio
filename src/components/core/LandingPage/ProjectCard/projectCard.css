@@ -1,0 +1,100 @@
+/* Your existing CSS */
+.projCard {
+  width: 25%;
+  height: 100%;
+  /* background-color: #fff; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 20rem;
+  outline: none;
+}
+
+.projCard:hover {
+  box-shadow: 0px 0px 15px 0px rgba(218, 206, 206, 0.2);
+}
+
+.projCard__link {
+  text-decoration: none; /* Adding this to remove the underline for the link */
+}
+
+.projCard__img {
+  width: 100%;
+  height: 200px;
+  background-color: #000;
+}
+
+.projCard__img--image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.projCard__content {
+  padding: 10px;
+  background: rgb(50, 50, 50);
+}
+
+.projCard__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.projCard__desc {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 50rem;
+  padding: 0 2rem;
+  /* font-size: 1rem;
+  font-weight: 400; */
+  color: white;
+  /* margin-bottom: 10px; */
+
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+.projCard__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projCard__footer__left {
+  display: flex;
+  align-items: center;
+}
+
+.projCard__footer__left__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.projCard__footer__left__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projCard__footer__left__name {
+  font-size: 1rem;
+  font-weight: 400;
+
+  margin-left: 10px;
+}
+
+.projCard__footer__right {
+  font-size: 1rem;
+  font-weight: 400;
+}

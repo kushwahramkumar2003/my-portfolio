@@ -8,6 +8,15 @@ import FacebookIcon from "../../assets/facebook-icon.png";
 import TwitterIcon from "../../assets/twitter.png";
 import YouTubeIcon from "../../assets/youtube.png";
 import InstagramIcon from "../../assets/instagram.png";
+import c from "../../assets/c.png";
+import cpp from "../../assets/c++.png";
+import js from "../../assets/javascript.png";
+import java from "../../assets/java.png";
+import node from "../../assets/node-js.png";
+import react from "../../assets/react.png";
+import mongo from "../../assets/mongodb.png";
+import mysql from "../../assets/mysql.png";
+import solodity from "../../assets/ethereum (copy).png";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 // import dotenv from "dotenv";
@@ -38,16 +47,31 @@ const Contact = () => {
   return (
     <section id="contactPage">
       <div id="clients">
-        <h1 className="contactPageTitle">My Clients</h1>
+        {/* <h1 className="contactPageTitle">My Clients</h1> */}
+        <h1 className="contactPageTitle">My Skills</h1>
         <p className="clientDesc">
-          I have the opportunity to work with a diverse group of companies Some
-          of the notable companies I have worked with includes
+          {/* I have the opportunity to work with a diverse group of companies Some
+          of the notable companies I have worked with includes */}
+          Proficient in MERN stack (MongoDB, Express.js, React.js, Node.js) for
+          full-stack web development. Skilled in C, C++, Java, HTML, CSS,
+          JavaScript, and experienced in database management using Oracle,
+          MySQL, and MongoDB. Additionally, familiar with Solidity for
+          blockchain development and enthusiastic about leveraging AI/ML in
+          practical applications.
         </p>
         <div className="clientImgs">
-          <img src={Walmart} alt="client" className="clientImg" />
+          {/* <img src={Walmart} alt="client" className="clientImg" />
           <img src={Adobe} alt="client" className="clientImg" />
           <img src={Microsoft} alt="client" className="clientImg" />
-          <img src={Facebook} alt="client" className="clientImg" />
+          <img src={Facebook} alt="client" className="clientImg" /> */}
+          <img src={node} alt="client" className="clientImg" />
+          <img src={js} alt="client" className="clientImg" />
+          <img src={java} alt="client" className="clientImg" />
+          <img src={react} alt="client" className="clientImg" />
+          <img src={cpp} alt="client" className="clientImg" />
+          <img src={c} alt="client" className="clientImg" />
+          <img src={mongo} alt="client" className="clientImg" />
+          <img src={mysql} alt="client" className="clientImg" />
         </div>
       </div>
       <div id="contact">

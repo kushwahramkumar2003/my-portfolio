@@ -70,6 +70,7 @@ exports.Signup = asyncHandler(async (req, res) => {
 exports.Login = asyncHandler(async (req, res) => {
   // extract userName and password from req.body
   const { email, password } = req.body;
+  console.log("Request arrived ");
 
   if (!email || !password) {
     throw new CustomError("Please provide userId and password", 400);
@@ -97,8 +98,10 @@ exports.Login = asyncHandler(async (req, res) => {
   admin.password = undefined;
 
   // send response
+  console.log("Admin logged in successfully");
   res.status(200).json({
     status: true,
     message: "Admin logged in successfully",
+    admin: admin,
   });
 });
