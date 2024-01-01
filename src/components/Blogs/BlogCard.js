@@ -8,12 +8,12 @@ const BlogCard = ({ blog }) => {
   const {
     title,
     caption,
-    body,
+    // body,
     user,
-    tags,
-    categories,
+    // tags,
+    // categories,
     createdAt,
-    updatedAt,
+    // updatedAt,
     photo,
   } = blog;
 

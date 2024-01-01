@@ -11,6 +11,8 @@ const Projects = () => {
   const [image, setImage] = useState(null);
   const [btnTitle, setBtnTitle] = useState("Add Project");
 
+  console.log(image);
+
   // create a submit handler function
   const handleSubmit = async (e) => {
     // prevent the default behavior of the form
@@ -48,7 +50,7 @@ const Projects = () => {
       console.log(response.status);
 
       // check if the response is ok
-      if (!response.status == 201) {
+      if (!response.status === 201) {
         throw new Error("Something went wrong");
       }
       // get the response body
@@ -124,7 +126,7 @@ const Projects = () => {
         <ProjectCard />
         <ProjectCard />
         <ProjectCard />
-        <ProjectCard /> 
+        <ProjectCard />
         <ProjectCard />
         <ProjectCard />
       </div>

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./works.css";
-import UserContext from "../Context/UserContext";
+// import UserContext from "../Context/UserContext";
 
 import ProjectCard from "../core/LandingPage/ProjectCard/ProjectCard";
 

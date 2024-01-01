@@ -7,7 +7,7 @@ import contactImg from "../../assets/contact.png";
 // import menu from "../../assets/menu.png";
 import menu from "../../assets/menu.gif";
 import { Link as Link2 } from "react-router-dom";
-import Login from "../Login/Login";
+// import Login from "../Login/Login";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (

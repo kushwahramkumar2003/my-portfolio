@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll";
-import { Link as Link2 } from "react-router-dom";
-import logo from "../../../assets/RKLogo11.png";
-import menu from "../../../assets/menu.png";
+// import { Link } from "react-scroll";
+// import { Link as Link2 } from "react-router-dom";
+// import logo from "../../../assets/RKLogo11.png";
+// import menu from "../../../assets/menu.png";
 import "../Dashboard/dashboard.css";
 import bg from "../../../assets/myPhoto.png";
 const Profile = () => {
-  let [showMenu, setShowMenu] = useState();
+  // let [showMenu, setShowMenu] = useState();
   let [name, setName] = useState("Ramkumar Kushwah");
   let [password, setPassword] = useState("");
   let [confirmPassword, setConfirmPassword] = useState("");

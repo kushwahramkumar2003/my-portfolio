@@ -10,7 +10,7 @@ import Blogs from "../Blogs/Blogs.js";
 import useFetchData from "../../hooks/useFetchData.js";
 
 const Home = () => {
-  const [user, setUser] = useState(null);
+  // const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(false);
   const [blogs, setBlogs] = useState([]);
   const [data, setData] = useState(null);
@@ -25,7 +25,7 @@ const Home = () => {
     setLoading(resLoading);
     setData(resData);
     setBlogs(resBlogs);
-  }, [resLoading]);
+  }, [resLoading, resData, resBlogs]);
 
   return (
     <div>

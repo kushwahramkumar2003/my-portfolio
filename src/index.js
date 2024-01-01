@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React  from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -7,15 +7,15 @@ import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Dashboard from "./components/core/Dashboard/Dashboard";
-import { useNavigate } from "react-router-dom";
-import UserContext from "./components/Context/UserContext.js";
+// import { useNavigate } from "react-router-dom";
+// import UserContext from "./components/Context/UserContext.js";
 
-function ProtectedRoute({ children }) {
-  const user = useContext(UserContext);
-  const navigate = useNavigate();
+// function ProtectedRoute({ children }) {
+//   const user = useContext(UserContext);
+//   const navigate = useNavigate();
 
-  return user ? children : navigate("/login", { replace: true });
-}
+//   return user ? children : navigate("/login", { replace: true });
+// }
 
 const router = createBrowserRouter([
   {

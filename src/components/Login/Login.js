@@ -19,7 +19,7 @@ const Login = () => {
       );
       console.log(response);
 
-      if (response.status != 200) throw new Error("Email password not match");
+      if (response.status !== 200) throw new Error("Email password not match");
       //   const data = await response.json();
 
       //   // Now you can access the 'admin' data

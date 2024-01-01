@@ -1,8 +1,8 @@
 import React from "react";
 import "./skills.css";
-import UIDesign from "../../assets/ui-design.png";
-import WebDesign from "../../assets/website-design.png";
-import AppDesign from "../../assets/app-design.png";
+// import UIDesign from "../../assets/ui-design.png";
+// import WebDesign from "../../assets/website-design.png";
+// import AppDesign from "../../assets/app-design.png";
 import WebDevelopment from "../../assets/web-development.png";
 import BlockChain from "../../assets/ethereum.png";
 import AIML from "../../assets/ai-brain-management.png";

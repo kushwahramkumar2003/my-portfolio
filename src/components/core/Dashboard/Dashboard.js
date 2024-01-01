@@ -4,20 +4,22 @@ import { Link as Link2 } from "react-router-dom";
 import logo from "../../../assets/RKLogo11.png";
 import menu from "../../../assets/menu.png";
 import "./dashboard.css";
-import bg from "../../../assets/myPhoto.png";
+// import bg from "../../../assets/myPhoto.png";
 import Profile from "../Profile/Profile";
 import Projects from "../Projects/Projects";
 const Dashboard = () => {
   let [showMenu, setShowMenu] = useState();
-  let [name, setName] = useState("Ramkumar Kushwah");
-  let [password, setPassword] = useState("");
-  let [confirmPassword, setConfirmPassword] = useState("");
-  let [Bg, setBg] = useState(bg);
+  // let [name, setName] = useState("Ramkumar Kushwah");
+  // let [password, setPassword] = useState("");
+  // let [confirmPassword, setConfirmPassword] = useState("");
+  // let [Bg, setBg] = useState(bg);
   let [profile, setProfile] = useState(true);
   let [project, setProject] = useState(false);
   let [skills, setSkills] = useState(false);
   let [resume, setResume] = useState(false);
   let [companies, setCompanies] = useState(false);
+
+  console.log(skills, resume, companies);
 
   return (
     <div className="dashboard">

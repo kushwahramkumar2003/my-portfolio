@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
-import Walmart from "../../assets/walmart.png";
-import Adobe from "../../assets/adobe.png";
-import Microsoft from "../../assets/microsoft.png";
-import Facebook from "../../assets/facebook.png";
+// import Walmart from "../../assets/walmart.png";
+// import Adobe from "../../assets/adobe.png";
+// import Microsoft from "../../assets/microsoft.png";
+// import Facebook from "../../assets/facebook.png";
 
 import FacebookIcon from "../../assets/facebook-icon.png";
 import TwitterIcon from "../../assets/twitter.png";
@@ -16,7 +16,7 @@ import node from "../../assets/node-js.png";
 import react from "../../assets/react.png";
 import mongo from "../../assets/mongodb.png";
 import mysql from "../../assets/mysql.png";
-import solodity from "../../assets/ethereum (copy).png";
+// import solodity from "../../assets/ethereum (copy).png";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 // import dotenv from "dotenv";
