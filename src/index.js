@@ -19,7 +19,7 @@ function ProtectedRoute({ children }) {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/my-portfolio",
     element: <App />,
   },
   {
@@ -30,7 +30,7 @@ const router = createBrowserRouter([
     path: "/dashboard",
     element: (
       // <ProtectedRoute>
-        <Dashboard />
+      <Dashboard />
       // </ProtectedRoute>
     ),
   },
