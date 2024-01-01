@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.7b5ca078.css",
+    "main.js": "/my-portfolio/static/js/main.0012f67b.js",
+    "static/js/787.128fc6e9.chunk.js": "/my-portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/portfolio-6.png": "/my-portfolio/static/media/portfolio-6.4a10fac7d271e87859e9.png",
+    "static/media/RKLogo11.png": "/my-portfolio/static/media/RKLogo11.465c445fc5dcd5434085.png",
+    "static/media/react.png": "/my-portfolio/static/media/react.c3dd99c05b75b3cb0ff2.png",
+    "static/media/Bar Loader.gif": "/my-portfolio/static/media/Bar Loader.993e0433e22d5e8a77a7.gif",
+    "static/media/web-development.png": "/my-portfolio/static/media/web-development.1815d5a2a3d90752e699.png",
+    "static/media/myPhoto.png": "/my-portfolio/static/media/myPhoto.f4b1af4d1bf9b139c876.png",
+    "static/media/ethereum.png": "/my-portfolio/static/media/ethereum.567f1c52a36c0545590b.png",
+    "static/media/java.png": "/my-portfolio/static/media/java.eabf544df16c7a6bff50.png",
+    "static/media/mysql.png": "/my-portfolio/static/media/mysql.a3856056dafb37e0da4c.png",
+    "static/media/node-js.png": "/my-portfolio/static/media/node-js.91697ae900785fc54448.png",
+    "static/media/mongodb.png": "/my-portfolio/static/media/mongodb.d5767e81605b3fd24c81.png",
+    "static/media/ai-brain-management.png": "/my-portfolio/static/media/ai-brain-management.d79e5634f05006a72377.png",
+    "static/media/c.png": "/my-portfolio/static/media/c.28a0bcbc4e2510042780.png",
+    "static/media/menu.gif": "/my-portfolio/static/media/menu.5622eba1c792242ffd70.gif",
+    "static/media/c++.png": "/my-portfolio/static/media/c++.87853fda52cac11ab921.png",
+    "static/media/ethereum (copy).png": "/my-portfolio/static/media/ethereum (copy).c4dee4395f85caddf86e.png",
+    "static/media/facebook.png": "/my-portfolio/static/media/facebook.81dd033a37c4860f7121.png",
+    "static/media/javascript.png": "/my-portfolio/static/media/javascript.d0f25c119ad0caefcc37.png",
+    "static/media/adobe.png": "/my-portfolio/static/media/adobe.a08b8360ff7b700ed0c4.png",
+    "static/media/walmart.png": "/my-portfolio/static/media/walmart.1d2b5e5c5c5a8e2bd5ce.png",
+    "static/media/ui-design.png": "/my-portfolio/static/media/ui-design.c4acd455fc2040eddcc8.png",
+    "static/media/instagram.png": "/my-portfolio/static/media/instagram.0bcd1dcb7d853c327af7.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.7b5ca078.css.map": "/my-portfolio/static/css/main.7b5ca078.css.map",
+    "main.0012f67b.js.map": "/my-portfolio/static/js/main.0012f67b.js.map",
+    "787.128fc6e9.chunk.js.map": "/my-portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b5ca078.css",
+    "static/js/main.0012f67b.js"
+  ]
+}
