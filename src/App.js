@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <UserContext.Provider value={({ user: user }, { setUser: setUser })}>
+        <h1>Happy new year !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
         <Home />
       </UserContext.Provider>
     </div>
