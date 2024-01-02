@@ -6,6 +6,8 @@ import reportWebVitals from "./reportWebVitals";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./components/Login/Login";
+
+//eslint-disable-next-line
 import Dashboard from "./components/core/Dashboard/Dashboard";
 // import { useNavigate } from "react-router-dom";
 // import UserContext from "./components/Context/UserContext.js";
