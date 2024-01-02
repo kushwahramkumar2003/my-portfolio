@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
@@ -19,21 +19,21 @@ import Dashboard from "./components/core/Dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
-    path: "/my-portfolio",
+    path: "/",
     element: <App />,
   },
   {
     path: "/login",
     element: <Login />,
   },
-  {
-    path: "/dashboard",
-    element: (
-      // <ProtectedRoute>
-      <Dashboard />
-      // </ProtectedRoute>
-    ),
-  },
+  // {
+  //   path: "/dashboard",
+  //   element: (
+  //     // <ProtectedRoute>
+  //     <Dashboard />
+  //     // </ProtectedRoute>
+  //   ),
+  // },
   {
     path: "*",
     element: <div>404</div>,
