@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import Login from "./components/Login/Login";
 
 //eslint-disable-next-line
@@ -19,7 +19,7 @@ import Dashboard from "./components/core/Dashboard/Dashboard";
 //   return user ? children : navigate("/login", { replace: true });
 // }
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <App />,
