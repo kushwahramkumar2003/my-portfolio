@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import { Link as Link2 } from "react-router-dom";
+import { Link as Link2, useNavigate } from "react-router-dom";
 import logo from "../../../assets/RKLogo11.png";
 import menu from "../../../assets/menu.png";
 import "./dashboard.css";
@@ -8,6 +8,8 @@ import "./dashboard.css";
 import Profile from "../Profile/Profile";
 import Projects from "../Projects/Projects";
 const Dashboard = () => {
+  const navigate = useNavigate();
+
   let [showMenu, setShowMenu] = useState();
   // let [name, setName] = useState("Ramkumar Kushwah");
   // let [password, setPassword] = useState("");
@@ -20,6 +22,12 @@ const Dashboard = () => {
   let [companies, setCompanies] = useState(false);
 
   console.log(skills, resume, companies);
+
+  useEffect(() => {
+    if (!profile) {
+      navigate("/");
+    }
+  }, [profile, navigate]);
 
   return (
     <div className="dashboard">

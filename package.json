@@ -1,9 +1,7 @@
 {
   "name": "my-portfolio",
-  "homepage": "https://kushwahramkumar2003.github.io/my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:5000",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.17.0",
@@ -24,7 +22,6 @@
     "server": "cd server && npm run dev",
     "deploy": "gh-pages -d build",
     "predeploy": "npm run build",
-    "dev": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm start\" \"npm run server\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

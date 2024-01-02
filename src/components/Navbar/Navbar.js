@@ -62,6 +62,17 @@ const Navbar = () => {
         <Link
           spy={true}
           smooth={true}
+          offset={20}
+          activeClass="active"
+          to="blog"
+          duration={500}
+          className="desktopMenuListItem"
+        >
+          Blogs
+        </Link>
+        <Link
+          spy={true}
+          smooth={true}
           offset={-50}
           activeClass="active"
           to="clients"
@@ -126,6 +137,7 @@ const Navbar = () => {
         >
           About
         </Link>
+
         <Link
           spy={true}
           smooth={true}
@@ -139,6 +151,20 @@ const Navbar = () => {
           }}
         >
           Portfolio
+        </Link>
+        <Link
+          spy={true}
+          smooth={true}
+          offset={-50}
+          activeClass="active"
+          to="blog"
+          duration={500}
+          className="listItem"
+          onClick={() => {
+            setShowMenu(false);
+          }}
+        >
+          Blogs
         </Link>
         <Link
           spy={true}
