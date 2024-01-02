@@ -21,7 +21,7 @@
 }
 
 .projCard__link {
-  text-decoration: none; /* Adding this to remove the underline for the link */
+  text-decoration: none;
 }
 
 .projCard__img {

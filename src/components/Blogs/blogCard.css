@@ -60,3 +60,35 @@
   padding: 10px;
   background: rgb(50, 50, 50);
 }
+.blog-link {
+  all: unset;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+}
+.blog-created-at {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+}
+.blog-userName {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 10px;
+}
+.blog-caption {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 50rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
