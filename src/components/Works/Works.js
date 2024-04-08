@@ -3,12 +3,11 @@ import "./works.css";
 // import UserContext from "../Context/UserContext";
 
 import ProjectCard from "../core/LandingPage/ProjectCard/ProjectCard";
-
 const Works = ({ projects, loading }) => {
   return (
     <>
       {loading && (
-        <div className="loading">
+        <div className="loaderParent">
           <div className="loader"></div>
         </div>
       )}

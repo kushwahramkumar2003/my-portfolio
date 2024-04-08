@@ -79,7 +79,7 @@ const Navbar = () => {
           duration={500}
           className="desktopMenuListItem"
         >
-          Clients
+          Skills
         </Link>
       </div>
       <div className="btns">
@@ -178,7 +178,7 @@ const Navbar = () => {
             setShowMenu(false);
           }}
         >
-          Clients
+          Skills
         </Link>
         <Link
           spy={true}

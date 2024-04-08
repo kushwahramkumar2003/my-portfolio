@@ -17,7 +17,7 @@ const Skills = () => {
         HTML, CSS, and JavaScript, as well as design software such as Adobe
         Photoshop and illustrator. */}
         Crafting MERN stack applications, AI/ML prototypes, and blockchain
-        projects. Solving over 400 coding challenges and fostering
+        projects. Solving over 800+ coding challenges and fostering
         collaborations for innovative ventures.
       </span>
       <div className="skillBars">
@@ -28,8 +28,8 @@ const Skills = () => {
             <h2>Web development</h2>
             <p>
               Skilled in MERN stack development and front-end proficiency in
-              HTML, CSS, and JavaScript, adept at creating dynamic and
-              innovative web applications.
+              ReactJS, NextJS , Tailwind CSS, and TypeScript, adept at creating
+              dynamic and innovative web applications.
             </p>
           </div>
         </div>{" "}

@@ -1,9 +1,4 @@
 import React, { useRef } from "react";
-// import Walmart from "../../assets/walmart.png";
-// import Adobe from "../../assets/adobe.png";
-// import Microsoft from "../../assets/microsoft.png";
-// import Facebook from "../../assets/facebook.png";
-
 import FacebookIcon from "../../assets/facebook-icon.png";
 import TwitterIcon from "../../assets/twitter.png";
 import YouTubeIcon from "../../assets/youtube.png";
@@ -16,25 +11,20 @@ import node from "../../assets/node-js.png";
 import react from "../../assets/react.png";
 import mongo from "../../assets/mongodb.png";
 import mysql from "../../assets/mysql.png";
-// import solodity from "../../assets/ethereum (copy).png";
+import tailwind from "../../assets/tailwind-css.svg";
+import typescript from "../../assets/typescript.svg";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
-// import dotenv from "dotenv";
-// dotenv.config();
-
-// const SERVICE_ID = process.env.SERVICE_ID;
-// const PUBLIC_KEY = process.env.PUBLIC_KEY;
-// const TEMPLATE_ID = process.env.TEMPLATE_ID;
 const Contact = () => {
   const form = useRef();
   const sendEmail = async (e) => {
     e.prevenddefault();
     try {
       const response = await emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        process.env.SERVICE_ID,
+        process.env.TEMPLATE_ID,
         form.current,
-        "YOUR_PUBLIC_KEY"
+        process.env.PUBLIC_KEY
       );
       console.log(response);
       alert("Email Sent !");
@@ -47,11 +37,8 @@ const Contact = () => {
   return (
     <section id="contactPage">
       <div id="clients">
-        {/* <h1 className="contactPageTitle">My Clients</h1> */}
         <h1 className="contactPageTitle">My Skills</h1>
         <p className="clientDesc">
-          {/* I have the opportunity to work with a diverse group of companies Some
-          of the notable companies I have worked with includes */}
           Proficient in MERN stack (MongoDB, Express.js, React.js, Node.js) for
           full-stack web development. Skilled in C, C++, Java, HTML, CSS,
           JavaScript, and experienced in database management using Oracle,
@@ -60,10 +47,7 @@ const Contact = () => {
           practical applications.
         </p>
         <div className="clientImgs">
-          {/* <img src={Walmart} alt="client" className="clientImg" />
-          <img src={Adobe} alt="client" className="clientImg" />
-          <img src={Microsoft} alt="client" className="clientImg" />
-          <img src={Facebook} alt="client" className="clientImg" /> */}
+          <img src={typescript} alt="client" className="clientImg" />
           <img src={node} alt="client" className="clientImg" />
           <img src={js} alt="client" className="clientImg" />
           <img src={java} alt="client" className="clientImg" />
@@ -72,6 +56,7 @@ const Contact = () => {
           <img src={c} alt="client" className="clientImg" />
           <img src={mongo} alt="client" className="clientImg" />
           <img src={mysql} alt="client" className="clientImg" />
+          <img src={tailwind} alt="client" className="clientImg" />
         </div>
       </div>
       <div id="contact">

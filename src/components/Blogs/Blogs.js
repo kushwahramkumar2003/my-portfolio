@@ -1,14 +1,13 @@
 import React from "react";
 import "./blogs.css";
 import BlogCard from "./BlogCard";
-
 const Blogs = ({ blogs, loading }) => {
   console.log("blogs : ", blogs);
 
   return (
     <>
       {loading && (
-        <div className="loading">
+        <div className="loaderParent">
           <div className="loader"></div>
         </div>
       )}
